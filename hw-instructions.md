@@ -23,7 +23,7 @@ Once you have your repo cloned, follow the instructions in the file `hw-instruct
 
 `cd` into your repo directory.
 
-There isn't anything in your repo right now except a Readme.md file and the .git directory.
+There isn't anything in your repo right now except a Readme.md file, the hw instructions, and the .git directory.
 
 Our first step is to use rails to make you a new app and to get it up and running at the "hello world" level.
 
