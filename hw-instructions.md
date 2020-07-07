@@ -53,9 +53,9 @@ And that's it.  We've created a "hello world" rails app.  To verify that it is w
 ```
 rails server -b 0.0.0.0
 ```
-You will see that we are using the Puma webserver and that it is running on port 3000.  Thankfully, Codio's default "Box URL" is also on port 3000.  You should be able to simply click "Box URL" and see what we've created.
+You will see that we are using the Puma webserver and that it is running on port 3000.  
 
-You should see a helpful error message telling you that Rails requires you to give it permission to run on your machine.  
+At the top of your Codio window, you will see a dropdown menu titled "Project Index (static)".  Click the white downward pointing arrow and select "Box URL".  You will be transported to a new browser tab and you should see a message telling you that you need to configure Rails to allow your machine to access the site while in development mode.  (Thankfully, Codio's default "Box URL" is also on port 3000.  You should be able to simply click "Box URL" and see what we've created for the remainder of your work on this app.)
 
 To fix this, you need to edit the file `config/environments/development.rb` and add
 ```ruby
