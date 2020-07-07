@@ -2,7 +2,7 @@
 
 This assigment is a reworking of the assignment "Hangperson on Rails" by Armando Fox and contains portions of his code, but the majority of the content is new and written by Mark Smucker, July 2020.  The signficiant difference between the two is that the ESaaS assignment does not show how to create a new rails application and was out of date with current versions of Ruby and Rails.
 
-This assignment was tested using the MSCI-245-S20 stack on Codio.  It works with [Ruby 2.6.6](https://ruby-doc.org/core-2.6.6/) and [Rails 6.0.2.1](https://guides.rubyonrails.org/).
+This assignment was tested using the MSCI-245-S20 stack on Codio.  It works with [Ruby 2.6.6](https://ruby-doc.org/core-2.6.6/) and [Rails 6.0.3.2](https://guides.rubyonrails.org/).
 
 ----
 
