@@ -40,7 +40,7 @@ The default database for Rails is sqlite, but Heroku uses Postgresql.  We want t
 
 Next, we need to finish setting up the database:
 ```
-rails db:create db:migrate
+rails db:create 
 ```
 And that's it.  We've created a "hello world" rails app.  To verify that it is working, do:
 ```
