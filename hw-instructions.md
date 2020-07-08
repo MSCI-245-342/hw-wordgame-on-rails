@@ -358,11 +358,11 @@ So, we need a form.  In Rails, we need to use the tools Rails provides for creat
 
 To create a form, we use the following code:
 ```
-<%= form_with url: game_create_path do |form| %>
+<%= form_with( url: game_create_path, local: true) do |form| %>
 <!-- Insert into here the form buttons, etc.  We'll get to these in a moment. -->
 <% end %>
 ```
-The `<%= %>` tags run some ruby code and print out the value returned.  The code we're running here is the "form_with" method.  We're passing it a value for the  parameter "url:", and the value is "game_create_path".  What is this `game_create_path`?  Remember when we run `rails routes` it shows us that each route has a "Prefix", and this "Prefix" is added to "_path" to give us a handy way of referring to the path to the route.  Super handy.
+The `<%= %>` tags run some ruby code and print out the value returned.  The code we're running here is the "form_with" method.  We're passing it a value for the  parameter "url:", and the value is "game_create_path".  What is this `game_create_path`?  Remember when we run `rails routes` it shows us that each route has a "Prefix", and this "Prefix" is added to "_path" to give us a handy way of referring to the path to the route.  Super handy.  The `local: true` option disables use of AJAX for submitting the form.
 
 To make the submit button, we use this Rails code:
 ```
@@ -370,7 +370,7 @@ To make the submit button, we use this Rails code:
 ```
 Putting together, you should have this in your new.html.erb file
 ```
-<%= form_with url: game_create_path do |form| %>
+<%= form_with( url: game_create_path, local: true) do |form| %>
 <%= submit_tag 'New Game' %>
 <% end %>
 ```
@@ -441,7 +441,7 @@ so that we now have in our show view:
 <p>Wrong guesses: <%= @game.wrong_guesses %></p>
 <p>Word so far: <%= @game.word_with_guesses %></p>
 <p>
-<%= form_with url: game_guess_path do |form| %>
+<%= form_with( url: game_guess_path, local: true) do |form| %>
 <%= label_tag( :guess, "Guess a letter:" ) %>
 <%= text_field_tag( :guess, nil, maxlength: 1 ) %>
 <%= submit_tag 'Guess!' %>
