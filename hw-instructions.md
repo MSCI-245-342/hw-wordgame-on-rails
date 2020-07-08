@@ -535,9 +535,9 @@ Modify your app so that when a user creates a new game, they also set the number
 
 # Submit Your Work
 
-1) Create a Heroku app named rails-wordgame-watiamname, where watiamname is your WatIAM user name, and deploy your new game to that app.
++ Create a Heroku app named rails-wordgame-watiamname, where watiamname is your WatIAM user name, and deploy your new game to that app.
 
-1) Edit the README.md file to be:
++ Edit the README.md file to be:
 
 ```
 # WordGame on Rails
@@ -550,9 +550,9 @@ Notes: Any notes to TA or instructor or notes for yourself.
 ```
 Put your name and Heroku URL into the `README.md` file.  
 
-1) Commit your repo and push to GitHub.
++ Commit your repo and push to GitHub.
 
-1) Verify that when viewing the Readme in GitHub, that it shows your full name and you can click on the Heroku URL and play your game.
++ Verify that when viewing the Readme in GitHub, that it shows your full name and you can click on the Heroku URL and play your game.
 
 Please note that you will not be able to mark your work as completed in Codio.  You submit your work by committing it and pushing it to GitHub and Heroku.  **The time of your last commit in GitHub will be used as the time of submission.**  
 
