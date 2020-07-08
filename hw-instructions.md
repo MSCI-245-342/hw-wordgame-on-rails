@@ -27,7 +27,15 @@ Run the following command:
 ```
 rails new . --skip-javascript --skip-test --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-action-cable --skip-active-storage --skip-keeps --skip-spring --skip-sprockets --skip-turbolinks --database=postgresql
 ```
-This creates your new app in this directory.  All of the "skip" options are to turn off functionality that we don't need in this app.  The most important ones to turn off are:
+
+Before going further, you should add all of this generated content to git, commit it and push it to GitHub for backup:
+```
+git add --all
+git commit -m"ran rails new"
+git push
+```
+
+The `rails new .` creates your new web app in this directory.  All of the "skip" options are to turn off functionality that we don't need in this app.  The most important ones to turn off are:
 + --skip-test : In general, in MSCI 245 and 342, we will follow ESaaS and use RSpec and Cucumber rather than the Rails unit testing framework.
 
 + --skip-turbolinks : This is a fancy javascript library to make your app seem to work faster for users, but it can lead to lots of headaches, which we don't need.
