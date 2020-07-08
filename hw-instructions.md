@@ -1,6 +1,6 @@
 # WordGame on Rails
 
-This assigment is a reworking of the assignment "Hangperson on Rails" by Armando Fox and contains portions of his code, but the majority of the content is new and written by Mark Smucker, July 2020.  The signficiant difference between the two is that the ESaaS assignment does not show how to create a new rails application and was out of date with current versions of Ruby and Rails.
+This assignment is a reworking of the assignment "Hangperson on Rails" by Armando Fox and contains portions of his code, but the majority of the content is new and written by Mark Smucker, July 2020.  The signficiant difference between the two is that the ESaaS assignment does not show how to create a new rails application and was out of date with current versions of Ruby and Rails.
 
 This assignment was tested using the MSCI-245-S20 stack on Codio.  It works with [Ruby 2.6.6](https://ruby-doc.org/core-2.6.6/) and [Rails 6.0.3.2](https://guides.rubyonrails.org/).
 
@@ -50,6 +50,8 @@ Next, we need to finish setting up the database:
 ```
 rails db:create 
 ```
+You may get a warning about "The dependency tzinfo-data...", and this warning can be safely ignored every time you see it.
+
 And that's it.  We've created a "hello world" rails app.  To verify that it is working, do:
 ```
 rails server -b 0.0.0.0
@@ -79,6 +81,8 @@ Restart the web server. (Go look back up there for how to do this.)
 Go to your website in a browser tab (https://yourCodio-hostName-3000.codio.io/) and verify Rails is running.  You should see something that now congratulates you on getting Rails running.
 
 ## Part 2 - Make the app 
+
+If you haven't done it recently, now is a good time to commit your repo and push to GitHub.  This gives you a backup in case of disaster.
 
 Now, we want to make our WordGame app.  What are the tasks?
 
@@ -190,6 +194,8 @@ Type `rails routes` to see that we didn't botch things  up.  Then go to "/" in y
 If we go to "/glarp", we get a development error page, which shows us helper path names that have been created, the HTTP verb and the controller action.  In development mode, Rails is helping us understand that we haven't told it how to handle a request to /glarp.  In this case, this is good, for we don't want /glarp to be handled.
 
 ### View Layout
+
+If you haven't done it recently, now is a good time to commit your repo and push to GitHub.  This gives you a backup in case of disaster.
 
 Let's make our views look a bit better.
 
@@ -349,6 +355,8 @@ The create and the guess methods need to process data that comes in from the use
 
 ### Creating FORMs
 
+If you haven't done it recently, now is a good time to commit your repo and push to GitHub.  This gives you a backup in case of disaster.
+
 Let's work on the 'new' view.  To edit it, open up `app/views/game/new.html.erb` .
 
 Delete what is in the file now.
@@ -481,6 +489,9 @@ Okay, now with the views in pretty good shape, let's get back to the game contro
 
 ### Game Controller: guess action handler 
 
+If you haven't done it recently, now is a good time to commit your repo and push to GitHub.  This gives you a backup in case of disaster.
+
+
 We need to write the guess method to handle the guesses from the user.
 
 Here is some code that works:
@@ -523,6 +534,8 @@ Now, go check the game out again in the browser.  It should be fully functioning
 
 # Adding Features
 
+If you haven't done it recently, now is a good time to commit your repo and push to GitHub.  This gives you a backup in case of disaster.
+
 Before you are done, we need you to add some further functionality to the game.
 
 ## Preventing Cheating
@@ -542,6 +555,8 @@ For example: "You have 7 guesses remaining." Should be displayed when the game s
 Modify your app so that when a user creates a new game, they also set the number of allowed wrong guesses.  The HTML form should default to 7 wrong guesses, but allow the user to edit this input field and change it to some other value.  If the user inputs a value less than 0, or something other than a number, your app sends them back to /game/new and displays a message that says they must enter a number 0 or larger.  You may not use javascript.
 
 # Submit Your Work
+
++ Commit your repo and push to GitHub.
 
 + Create a Heroku app named rails-wordgame-watiamname, where watiamname is your WatIAM user name, and deploy your new game to that app.
 
@@ -563,35 +578,3 @@ Put your name and Heroku URL into the `README.md` file.
 + Verify that when viewing the Readme in GitHub, that it shows your full name and you can click on the Heroku URL and play your game.
 
 Please note that you will not be able to mark your work as completed in Codio.  You submit your work by committing it and pushing it to GitHub and Heroku.  **The time of your last commit in GitHub will be used as the time of submission.**  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
